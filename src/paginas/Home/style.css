@@ -1,0 +1,140 @@
+/* SECÃO BANNER */
+.secao-banner {
+    height: 90vh;
+    margin-top: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: url('../../../public/assets/banner-home.png');
+    background-color: #f9db79;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.texto-banner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 30px;
+}
+
+.texto-banner h1 {
+    font-size: 100px;
+    color: #fff;
+    text-shadow: 3px 5px 2px #474747;
+}
+
+/* SECÃO SABORES */
+.secao-sabores,
+.secao-eventos,
+.secao-sobre {
+    display: flex;
+}
+
+.secao-sabores img,
+.secao-eventos img,
+.secao-sobre img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.descricao-secao {
+    width: 50%;
+    padding: 100px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtitulo {
+    text-transform: uppercase;
+    font-size: 35px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.descricao-secao p {
+    padding: 0 100px;
+    line-height: 26px;
+    margin: 40px 0;
+}
+
+.descricao-secao span {
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .descricao-secao p {
+        padding: 0px 50px
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .texto-banner h1 {
+        font-size: 60px;
+    }
+
+    .secao-sabores {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secao-sabores img {
+        width: 100%;
+    }
+
+    .secao-sabores,
+    .secao-eventos,
+    .secao-sobre {
+        width: 100%;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .secao-eventos {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .secao-eventos img {
+        width: 100%;
+    }
+
+    .secao-sobre {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secao-sobre img {
+        width: 100%;
+    }
+
+    .descricao-secao {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .texto-banner h1 {
+        font-size: 40px;
+    }
+
+    .descricao-secao {
+        width: 100%;
+    }
+
+    .subtitulo {
+        line-height: 40px;
+    }
+}
